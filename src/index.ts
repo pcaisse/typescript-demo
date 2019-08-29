@@ -13,4 +13,5 @@ function formatMessage(msg: Message) {
   return msg.yell ? msg.text.toUpperCase() : msg.text;
 }
 
+// @ts-ignore
 console.log(formatMessage({ text: "Hello!" }));
