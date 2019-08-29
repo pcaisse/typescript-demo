@@ -9,9 +9,7 @@ interface Message {
   text: string;
 }
 
-function formatMessage(msg: Message) {
-  return msg.yell ? msg.text.toUpperCase() : msg.text;
-}
+const formatMessage = (msg: Message) =>
+  msg.yell ? msg.text.toUpperCase() : msg.text;
 
-// @ts-ignore
-console.log(formatMessage({ text: "Hello!" }));
+console.log(formatMessage({ yell: true, text: "Hello!" }));
