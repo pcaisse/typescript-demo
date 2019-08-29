@@ -47,3 +47,16 @@ function area(s: Shape) {
 }
 
 console.log(area({ kind: "circle", radius: 4 }));
+
+interface LengthWise {
+  length: number;
+}
+
+function logLength<T extends LengthWise>(arg: T): T {
+  console.log(arg.length);
+  return arg;
+}
+
+logLength([1, 2, 3]);
+logLength("heyo");
+logLength(console.log);
