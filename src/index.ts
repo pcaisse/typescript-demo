@@ -1,3 +1,5 @@
+import R from "ramda";
+
 function add(x: number, y: number) {
   return x + y;
 }
@@ -60,3 +62,5 @@ function logLength<T extends LengthWise>(arg: T): T {
 logLength([1, 2, 3]);
 logLength("heyo");
 logLength(console.log);
+
+console.log(R.add(1, 3));

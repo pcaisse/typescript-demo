@@ -5,6 +5,8 @@
   "author": "Peter Caisse <pcaisse@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/ramda": "0.26.21",
+    "ramda": "0.26.1",
     "typescript": "3.6.2"
   }
 }
